@@ -5,7 +5,7 @@ aws:
 
 application:
   bucket:
-    name: us-clean-uat
+    name: us-east-prod
 
 spring:
   servlet:
