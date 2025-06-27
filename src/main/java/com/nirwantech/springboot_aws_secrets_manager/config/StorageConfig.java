@@ -25,7 +25,7 @@ public class StorageConfig {
 
     @Bean
     public AmazonS3 s3Client() {
-        Map<String, String> secrets = SecretManagerUtil.getSecrets(SECRET_NAME, Region.of(REGION));
+        Map<String, String> secrets = SecretManagerUtil.getSecretsCredentials(SECRET_NAME, Region.of(REGION));
 
         String accessKey = secrets.get("aws_access_key_id");
         String secretKey = secrets.get("aws_secret_access_key");

@@ -9,7 +9,7 @@ import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRespon
 import java.util.Map;
 
 public class SecretManagerUtil {
-    public static Map<String, String> getSecrets(String secretName, Region region) {
+    public static Map<String, String> getSecretsCredentials(String secretName, Region region) {
         SecretsManagerClient client = SecretsManagerClient.builder()
                 .region(region)
                 .build();
